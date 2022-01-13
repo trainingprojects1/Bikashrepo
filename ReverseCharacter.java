@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class ReverseCharacter {
 	public static String reverseString(String s) {
-		char [] word= new char[s.length()];
+		
+		String rev="";
+		int len= s.length();
 		for (int i = s.length() - 1; i >= 0; i--) {
-		 System.out.println(s.charAt(i)); 
+		 rev=rev+s.charAt(i); 
 		}
-		return s ;
+		return rev ;
 		
 	}
 
