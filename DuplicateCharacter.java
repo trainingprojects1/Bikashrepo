@@ -36,3 +36,4 @@ public class DuplicateCharacter {
 	}
 
 }
+//hello from Bikash
