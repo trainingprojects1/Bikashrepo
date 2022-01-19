@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd" >
+<beans>
+	<bean id="beanBikash" class="com.java.springday23.Student">
+		<property name="sno" value="1" />
+		<property name="firstName" value="Bikash" />
+		<property name="lastName" value="Adhikari" />
+	</bean>
+
+	<bean id ="beanDipen" class="com.java.springday23.Student">
+		<property name="sno" value="2" />
+		<property name="firstName" value="Dipendra" />
+		<property name="lastName" value="Adhikari" />
+	</bean>
+
+	<bean id="beanTrainer" class="com.java.springday23.Trainer">
+		<property name="trainerName" value="Ramey" />
+		<property name="location" value="Bangladesh" />
+		<property name="studentList">
+			<list>
+				<ref bean="beanBikash" />
+				<ref bean="beanDipen" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

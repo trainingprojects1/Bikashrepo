@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd" >
+<beans>
+<bean id="Biku" class="com.java.day23.Person">
+<property name="id" value="1"/>
+<property name= "name" value="BIkash"/>
+<property name="jobdetails">
+<bean class="com.java.day23.JobDetails">
+<property name ="company" value="IBM"/>
+<property name="job" value="Manager"/>
+<property name="location" value="Fairfax"/>
+</bean>
+</property>
+<property name="familydetails">
+<bean class="com.java.day23.Family">
+<property name="state" value= "Virginia"/>
+<property name="city" value="Centreville"></property>
+</bean>
+</property>
+</bean>
+<bean id="Tiku" class="com.java.day23.Person">
+<property name="id" value="1"/>
+<property name= "name" value="Akash"/>
+<property name="jobdetails">
+<bean class="com.java.day23.JobDetails">
+<property name ="company" value="Apple"/>
+<property name="job" value="Developer"/>
+<property name="location" value="Ohio"/>
+</bean>
+</property>
+<property name="familydetails">
+<bean class="com.java.day23.Family">
+<property name="state" value= "Ohio"/>
+<property name="city" value="Kentucky"></property>
+</bean>
+</property>
+</bean>
+</beans>
